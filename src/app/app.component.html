@@ -1,0 +1,89 @@
+<!-- our website start here -->
+<header>
+  <div class="container flex">
+    <div class="logo">
+      <a href="#"><img src="../../assets/inforsys.png" alt="logo" /></a>
+    </div>
+    <!-- checkbox -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul class="nav-link">
+        <li><a href="#home" routerLink="/home">Home</a></li>
+        <li><a href="#sofi" routerLink="/sofi">SOFI</a></li>
+        <li><a href="#pisi" routerLink="/pisi">PISI</a></li>
+        <li><a href="#about" routerLink="/about">About Us</a></li>
+        <li><a href="#contact" routerLink="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </div>
+</header>
+
+<!-- <app-sofi></app-sofi> -->
+<router-outlet></router-outlet>
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="address">
+      <h1><img src="../../assets/inforsys-white.png" alt="logo" /></h1>
+
+      <p>PT Inforsys Indonesia</p>
+      <p>Orchard Walk Blok C#18</p>
+      <p>Jl. Orchard Boulevard</p>
+      <p>Orchard Park Batam</p>
+      <p>Batam Kota</p>
+      <p>Kepulauan Riau 29464</p>
+    </div>
+    <div class="link">
+      <ul class="list">
+        <h6>ABOUT US</h6>
+        <li>
+          <a href="#about" routerLink="/about">About</a>
+        </li>
+        <li>
+          <a href="#career" routerLink="/career">Career</a>
+        </li>
+        <li>
+          <a href="#contact" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <h6>PRODUCTS</h6>
+        <li><a href="#sofi" routerLink="/sofi" href="#">SOFI</a></li>
+        <li><a href="#pisi" routerLink="/pisi" href="#">PISI</a></li>
+      </ul>
+      <ul class="list">
+        <h6>SUPPORT</h6>
+        <li><a href="#term">Terms & Conditions</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#covid">Covid-19</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="icon">
+    <span
+      class="iconify"
+      data-icon="eva:facebook-outline"
+      data-inline="false"
+    ></span>
+    <span
+      class="iconify"
+      data-icon="eva:twitter-outline"
+      data-inline="false"
+    ></span>
+    <span
+      class="iconify"
+      data-icon="akar-icons:instagram-fill"
+      data-inline="false"
+    ></span>
+    <span class="iconify" data-icon="feather:gitlab" data-inline="false"></span>
+  </div>
+
+  <div class="text-center copyright">
+    <p>2021 &copy; PT Inforsys Indonesia.</p>
+  </div>
+</footer>

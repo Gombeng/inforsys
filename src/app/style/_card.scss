@@ -1,0 +1,88 @@
+$primary: rgb(90, 79, 220);
+.features {
+  text-align: center;
+  transition: all 0.5s;
+  .flex-column {
+    flex: 1;
+
+    .card {
+      margin: 2rem 1rem;
+      padding: 2rem;
+      border-radius: 0.3rem;
+
+      box-shadow: 0 3px 12px rgba(6, 11, 47, 0.1);
+      transition: all 0.5s;
+
+      .iconify {
+        height: 80px;
+        width: 80px;
+        padding: 1rem;
+        border-radius: 50%;
+        background: rgba(90, 79, 220, 0.12);
+        color: #5a4fdc;
+        margin-bottom: 1.5rem;
+        transition: ease 0.5s;
+      }
+
+      &:hover {
+        .iconify {
+          color: white;
+          border: 3px solid rgb(255, 255, 255);
+        }
+
+        color: white;
+        box-shadow: 0 3px 12px rgb(90, 79, 220);
+        background-color: $primary;
+
+        p {
+          color: white;
+        }
+      }
+
+      p {
+        transition: all 0.5s;
+        line-height: 1.5;
+      }
+      h5 {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.flex {
+  align-items: flex-start;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 56.26rem) {
+  .max-width {
+    max-width: 25rem;
+  }
+}
+
+// when screen is smaller then 900px : execute this code
+@media screen and (max-width: 56.25rem) {
+  .flex {
+    flex-direction: column;
+
+    .flex-column {
+      .card {
+        margin: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .image {
+      img {
+        margin: 3rem 0;
+      }
+    }
+  }
+  .text {
+    text-align: center;
+  }
+}

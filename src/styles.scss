@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+
+// font color
+$heading: #3b3950;
+$text: #9e9cb9;
+
+// font size
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 71.25rem; // 1140px
+  width: 90%;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 3.35rem; // 52px
+}
+
+h2 {
+  font-size: 3rem; // 48px
+}
+
+h3 {
+  font-size: 2.5rem; // 40px
+}
+
+h4 {
+  font-size: 2rem; // 32px
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem; //17.6px
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 3px 3px 6px rgba(14, 10, 65, 0.25);
+  font-weight: 700;
+  color: $heading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+}
+p,
+li {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.9rem; // 30px
+  color: $text;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $heading;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.iconify {
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  color: #5a4fdc;
+  transition: ease 0.5s;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.c-red {
+  color: rgb(232, 62, 140);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.margin-top-1 {
+  margin-top: 2rem;
+}
+.margin-top-2 {
+  margin-top: 4rem;
+}
+.margin-top-3 {
+  margin-top: 6rem;
+}
+
+// when screen is smaller than this value, then:
+@media screen and (max-width: 43rem) {
+  //688px
+}
+
+@media screen and (max-width: 62rem) {
+  // 992px
+}
+
+@media screen and (max-width: 75rem) {
+  // 1140px
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 82rem) {
+  // 1312px
+}

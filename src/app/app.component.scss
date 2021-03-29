@@ -1,0 +1,289 @@
+// color
+$primary: #5a4fdc;
+
+/*
+===========
+==  nav  ==
+===========
+*/
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 3px 12px rgba(6, 11, 47, 0.1);
+
+  .container {
+    margin: 0 auto;
+    height: 4.5rem;
+  }
+
+  .logo {
+    flex: 1;
+    img {
+      height: 34px;
+    }
+  }
+  nav {
+    flex: 1.2;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+// when screen is bigger than 901 then:
+@media screen and (min-width: 901px) {
+  .nav-link {
+    li {
+      a {
+        padding: 1em;
+        &:hover {
+          color: $primary;
+          font-weight: 600;
+          transition: 0.3s ease;
+        }
+        &:focus {
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+// when screen is smaller then 900px : execute this code
+@media screen and (max-width: 56.25rem) {
+  // 900px
+  header {
+    display: block;
+
+    .logo {
+      display: flex;
+      margin: 1rem 0;
+      // order: 2;
+    }
+
+    nav {
+      display: none;
+
+      .nav-link {
+        display: block;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 3px 12px rgba(6, 11, 47, 0.1);
+        li {
+          padding: 2rem;
+          a {
+            padding: 2em 3em;
+          }
+        }
+      }
+    }
+
+    .nav-toggle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 1rem;
+      display: none;
+
+      &:checked ~ nav {
+        display: block;
+        position: absolute;
+        top: 4.5rem;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+      }
+
+      &:checked ~ .nav-toggle-label {
+        outline: 2px solid rgb(187, 187, 187);
+      }
+    }
+
+    .nav-toggle-label {
+      margin: 1rem 0;
+      display: flex;
+      height: 40px;
+      width: 40px;
+      // order: 1;
+      align-items: center;
+      justify-content: center;
+
+      span,
+      span::before,
+      span::after {
+        display: block;
+        background: rgb(80, 80, 80);
+        height: 3px;
+        width: 1.7rem;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      span::before,
+      span::after {
+        content: "";
+        position: absolute;
+      }
+
+      span::before {
+        bottom: 8px;
+      }
+
+      span::after {
+        top: 8px;
+      }
+    }
+  }
+}
+
+/*
+==============
+==  footer  ==
+==============
+*/
+
+footer {
+  background-color: #292838;
+
+  .container {
+    padding: 1.3rem 0;
+  }
+  .icon {
+    padding: 0 0 1.3rem 0;
+  }
+
+  .address {
+    h1 {
+      margin-bottom: 1.2rem;
+      img {
+        height: 24px;
+      }
+    }
+
+    p {
+      margin: 10px 0;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .link {
+    .list {
+      margin: 30px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h6 {
+        color: white;
+      }
+
+      li {
+        margin: 10px 0;
+        a {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.5s ease;
+
+          &:hover {
+            padding-left: 0.5rem;
+            text-decoration: underline;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    .iconify {
+      color: rgba(255, 255, 255, 0.6);
+      transition: 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .copyright {
+    background-color: #242331;
+    padding: 1rem 0;
+
+    p {
+      color: #999;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1141px) {
+  footer {
+    .icon {
+      margin: 1rem;
+      text-align: center;
+
+      .iconify {
+        margin: 0 20px;
+        font-size: 1.5rem;
+      }
+    }
+    .container {
+      display: flex;
+
+      .address {
+        flex: 1;
+      }
+
+      .link {
+        display: flex;
+        flex: 2;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  footer {
+    text-align: center;
+
+    h1,
+    h6 {
+      margin-bottom: 1.2rem;
+    }
+
+    .icon {
+      margin: 1rem;
+      .iconify {
+        margin: 0 15px;
+        font-size: 1.3rem;
+      }
+    }
+
+    .link {
+      display: flex;
+      .list {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    .link {
+      display: block;
+    }
+  }
+}

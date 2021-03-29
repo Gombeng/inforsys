@@ -1,0 +1,11 @@
+@import "../style/card";
+@import "../style/page";
+
+// when screen is smaller than 1100px
+@media screen and (max-width: 68.75rem) {
+  .image {
+    img {
+      margin-top: 2.5rem;
+    }
+  }
+}

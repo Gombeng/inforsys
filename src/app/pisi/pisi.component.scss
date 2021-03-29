@@ -1,0 +1,37 @@
+@import "../style/page";
+@import "../style/card";
+
+.flex {
+  .attendance {
+    margin-right: 2.5rem;
+    text-align: right;
+  }
+  .payroll {
+    margin-left: 2.5rem;
+    // background-color: #333;
+  }
+}
+
+// when screen is smaller than 1100px
+@media screen and (max-width: 68.75rem) {
+  .image {
+    img {
+      margin-top: 2.5rem;
+    }
+  }
+}
+// when screen is smaller then 900px : execute this code
+@media screen and (max-width: 56.25rem) {
+  .flex {
+    .attendance,
+    .payroll {
+      margin: 0 1.5rem;
+      text-align: center;
+    }
+    .payroll {
+      h3 {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
