@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "./uikit.css";
 
 // font color
 $heading: #3b3950;
@@ -53,7 +54,8 @@ h6 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   text-shadow: 3px 3px 6px rgba(14, 10, 65, 0.25);
   font-weight: 700;
   color: $heading;
@@ -91,14 +93,6 @@ ul {
   }
 }
 
-.iconify {
-  height: 40px;
-  width: 40px;
-  margin-right: 1rem;
-  border-radius: 50%;
-  color: #5a4fdc;
-  transition: ease 0.5s;
-}
 .title {
   display: flex;
   flex-direction: row;

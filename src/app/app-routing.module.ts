@@ -7,6 +7,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SofiComponent } from './sofi/sofi.component';
 import { PisiComponent } from './pisi/pisi.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { CovidComponent } from './covid/covid.component';
+import { CareerComponent } from './career/career.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -29,6 +33,22 @@ const routes: Routes = [
   {
     path: 'pisi',
     component: PisiComponent,
+  },
+  {
+    path: 'terms',
+    component: TermsComponent,
+  },
+  {
+    path: 'privacy',
+    component: PrivacyComponent,
+  },
+  {
+    path: 'covid',
+    component: CovidComponent,
+  },
+  {
+    path: 'career',
+    component: CareerComponent,
   },
 ];
 

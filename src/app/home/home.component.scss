@@ -9,22 +9,6 @@
   }
 }
 
-// when screen is smaller then 900px : execute this code
-@media screen and (max-width: 56.25rem) {
-  .flex {
-    flex-direction: column;
-
-    .image {
-      img {
-        margin: 3rem 0;
-      }
-    }
-  }
-  .text {
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 56.26rem) {
   .max-width {
     max-width: 25rem;

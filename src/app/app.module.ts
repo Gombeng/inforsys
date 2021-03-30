@@ -8,6 +8,10 @@ import { SofiComponent } from './sofi/sofi.component';
 import { PisiComponent } from './pisi/pisi.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { CovidComponent } from './covid/covid.component';
+import { CareerComponent } from './career/career.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ContactComponent } from './contact/contact.component';
     SofiComponent,
     PisiComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    TermsComponent,
+    PrivacyComponent,
+    CovidComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,

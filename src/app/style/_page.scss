@@ -17,9 +17,32 @@
   }
 }
 
+.iconify {
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  color: #5a4fdc;
+  transition: ease 0.5s;
+}
+
 // when screen is smaller then 900px : execute this code
 @media screen and (max-width: 56.25rem) {
-  .image {
-    margin-top: 0;
+  .flex {
+    flex-direction: column;
+
+    .image {
+      margin: 0;
+    }
+  }
+  .text {
+    text-align: center;
   }
 }
+
+// when screen is smaller then 900px : execute this code
+// @media screen and (max-width: 56.25rem) {
+//   .image {
+//     margin-top: 0;
+//   }
+// }
