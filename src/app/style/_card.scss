@@ -34,7 +34,8 @@ $primary: rgb(90, 79, 220);
         box-shadow: 0 3px 12px rgb(90, 79, 220);
         background-color: $primary;
 
-        p {
+        p,
+        h5 {
           color: white;
         }
       }
